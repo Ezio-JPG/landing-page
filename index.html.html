@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Torta de Sobra de Arroz – Receita</title>
+  <meta name="description" content="Receita completa com tempo de preparo, ingredientes, modo de preparo e informações nutricionais. Pronta para imprimir ou salvar em PDF." />
+  <style>
+    :root{
+      --bg:#0b0c10; /* fundo escuro elegante */
+      --card:#111317;
+      --muted:#b0b6bf;
+      --text:#e9edf2;
+      --accent:#6ee7b7; /* verde menta */
+      --accent-2:#60a5fa; /* azul */
+      --border:#1c2027;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--accent)}
+    .container{max-width:900px;margin:40px auto;padding:0 16px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,0)) , var(--card);border:1px solid var(--border);border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.35);overflow:hidden}
+    header.hero{display:grid;grid-template-columns:220px 1fr;gap:20px;padding:24px}
+    .cover{width:100%;height:220px;border-radius:16px;object-fit:cover;border:1px solid var(--border)}
+    h1{margin:0;font-size:clamp(1.6rem,2.5vw,2.2rem)}
+    .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .badge{border:1px solid var(--border);background:#0f1116;border-radius:999px;padding:6px 10px;font-size:.9rem;color:var(--muted)}
+    .actions{display:flex;gap:8px;margin-top:12px}
+    button{cursor:pointer;border:1px solid var(--border);background:#121723;color:var(--text);padding:10px 14px;border-radius:12px;font-weight:600}
+    button.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#081018;border:none}
+    main{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;padding:0 24px 24px 24px}
+    section{background:#0e1218;border:1px solid var(--border);border-radius:18px;padding:18px}
+    h2{margin:0 0 8px 0;font-size:1.1rem;letter-spacing:.4px}
+    .meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+    .meta .box{background:#0b0f15;border:1px dashed var(--border);border-radius:14px;padding:10px;text-align:center;color:var(--muted)}
+    .grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+
+    /* Lista de ingredientes com check */
+    .ing{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+    .ing li{display:flex;align-items:center;gap:10px;background:#0b0f15;border:1px solid var(--border);padding:10px;border-radius:12px}
+    .ing input[type="checkbox"]{width:18px;height:18px}
+
+    /* Modo de preparo */
+    ol.steps{margin:0;padding-left:20px;display:grid;gap:10px}
+    ol.steps li{background:#0b0f15;border:1px solid var(--border);padding:12px;border-radius:12px}
+
+    /* Tabela nutricional */
+    table{width:100%;border-collapse:collapse;font-size:.95rem}
+    th,td{border-bottom:1px solid var(--border);padding:10px 8px;text-align:left}
+    th{color:var(--muted);font-weight:600}
+
+    .notes{color:var(--muted);font-size:.95rem}
+
+    footer{padding:0 24px 24px 24px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#0b0f15;border:1px solid var(--border);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:.9rem}
+
+    /* Responsivo */
+    @media (max-width: 800px){
+      header.hero{grid-template-columns:1fr}
+      .cover{height:200px}
+      main{grid-template-columns:1fr}
+    }
+
+    /* Impressão / PDF */
+    @media print{
+      :root{--bg:#fff;--card:#fff;--text:#000;--muted:#333;--border:#ccc}
+      body{background:#fff}
+      .card,section,.box,.ing li,ol.steps li,.badge,.tag{box-shadow:none}
+      button,.actions{display:none !important}
+      a{color:#000;text-decoration:none}
+      .container{margin:0;max-width:100%}
+    }
+  </style>
+
+  <!-- Dados estruturados Recipe (ajuda SEO e rich snippets) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Recipe",
+    "name": "Torta de Sobra de Arroz",
+    "description": "Aproveite sobras de arroz para fazer uma torta prática e saborosa.",
+    "author": {"@type":"Person","name":"Seu Nome"},
+    "datePublished": "2025-08-14",
+    "recipeCategory": "Acompanhamentos",
+    "recipeCuisine": "Brasileira",
+    "prepTime": "PT15M",
+    "cookTime": "PT35M",
+    "totalTime": "PT50M",
+    "recipeYield": "8 porções",
+    "recipeIngredient": [
+      "2 xícaras de arroz cozido (sobras)",
+      "3 ovos",
+      "1/2 xícara de leite",
+      "1/2 xícara de queijo ralado",
+      "2 colheres (sopa) de farinha de trigo",
+      "1 colher (chá) de fermento em pó",
+      "1 tomate picado",
+      "1/2 cebola picada",
+      "Sal e pimenta a gosto",
+      "Salsinha a gosto",
+      "Azeite para untar"
+    ],
+    "recipeInstructions": [
+      {"@type":"HowToStep","text":"Preaqueça o forno a 200 ºC e unte uma forma média."},
+      {"@type":"HowToStep","text":"Bata ovos, leite, queijo e temperos. Incorpore o arroz, a farinha e o fermento."},
+      {"@type":"HowToStep","text":"Junte tomate, cebola e salsinha. Misture bem."},
+      {"@type":"HowToStep","text":"Despeje na forma e asse por 30–35 minutos ou até dourar."}
+    ],
+    "image": ["cover.jpg"]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header class="hero">
+        <img class="cover" src="https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=1200&auto=format&fit=crop" alt="Imagem ilustrativa da torta" />
+        <div>
+          <h1>Torta de Sobra de Arroz</h1>
+          <div class="badges">
+            <span class="badge">Fácil</span>
+            <span class="badge">Rende: 8 porções</span>
+            <span class="badge">Total: ~50 min</span>
+          </div>
+          <div class="actions">
+            <button class="primary" onclick="window.print()">Imprimir / Salvar em PDF</button>
+            <button onclick="toggleChecks()">Marcar/Desmarcar Ingredientes</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section>
+          <h2>Ingredientes</h2>
+          <ul class="ing" id="ingList">
+            <li><input type="checkbox"/> 2 xícaras de arroz cozido (sobras)</li>
+            <li><input type="checkbox"/> 3 ovos</li>
+            <li><input type="checkbox"/> 1/2 xícara de leite</li>
+            <li><input type="checkbox"/> 1/2 xícara de queijo ralado</li>
+            <li><input type="checkbox"/> 2 colheres (sopa) de farinha de trigo</li>
+            <li><input type="checkbox"/> 1 colher (chá) de fermento em pó</li>
+            <li><input type="checkbox"/> 1 tomate picado</li>
+            <li><input type="checkbox"/> 1/2 cebola picada</li>
+            <li><input type="checkbox"/> Sal e pimenta a gosto</li>
+            <li><input type="checkbox"/> Salsinha a gosto</li>
+            <li><input type="checkbox"/> Azeite para untar</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Tempo & Porções</h2>
+          <div class="meta">
+            <div class="box"><strong>Preparo</strong><br>15 min</div>
+            <div class="box"><strong>Forno</strong><br>35 min</div>
+            <div class="box"><strong>Rende</strong><br>8 porções</div>
+          </div>
+          <div style="height:12px"></div>
+          <h2>Modo de Preparo</h2>
+          <ol class="steps">
+            <li>Preaqueça o forno a 200 ºC e unte uma forma média.</li>
+            <li>Em uma tigela, bata ovos, leite, queijo, sal e pimenta. Acrescente o arroz, a farinha e o fermento.</li>
+            <li>Adicione tomate, cebola e salsinha. Misture até ficar homogêneo.</li>
+            <li>Despeje na forma e leve ao forno por 30–35 minutos, até dourar.</li>
+            <li>Espere amornar, desenforme e sirva.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Informações Nutricionais (aprox. por porção)</h2>
+          <table>
+            <thead>
+              <tr><th>Item</th><th>Quantidade</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Calorias</td><td>210 kcal</td></tr>
+              <tr><td>Carboidratos</td><td>26 g</td></tr>
+              <tr><td>Proteínas</td><td>9 g</td></tr>
+              <tr><td>Gorduras</td><td>8 g</td></tr>
+              <tr><td>Fibra</td><td>1 g</td></tr>
+              <tr><td>Sódio</td><td>220 mg</td></tr>
+            </tbody>
+          </table>
+          <p class="notes">* Valores estimados, variam conforme ingredientes usados.</p>
+        </section>
+
+        <section>
+          <h2>Dicas</h2>
+          <p class="notes">Pode adicionar frango desfiado, milho, ervilha ou sobras de legumes. Para versão sem glúten, substitua a farinha de trigo por amido de milho.</p>
+        </section>
+      </main>
+
+      <footer>
+        <div class="tags">
+          <span class="tag">#aproveitamento</span>
+          <span class="tag">#sustentável</span>
+          <span class="tag">#fácil</span>
+        </div>
+        <small class="notes">© <span id="year"></span> Grupo: Ézio Gustavo Kimili Pedro Rayssa • Última atualização: <time id="updated"></time></small>
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function toggleChecks(){
+      document.querySelectorAll('#ingList input[type="checkbox"]').forEach(cb=>{cb.checked=!cb.checked});
+    }
+    const d=new Date();
+    document.getElementById('year').textContent=d.getFullYear();
+    document.getElementById('updated').textContent=d.toLocaleDateString('pt-BR');
+  </script>
+</body>
+</html>
